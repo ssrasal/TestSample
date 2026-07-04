@@ -1,0 +1,55 @@
+# AutoSignal Pro — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# ── Core async runtime ─────────────────────────────────────────
+asyncio-mqtt==0.16.2            # optional for IoT alerting
+
+# ── Web framework ──────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+websockets==12.0
+python-multipart==0.0.9
+
+# ── Database ───────────────────────────────────────────────────
+asyncpg==0.29.0                 # async PostgreSQL driver (fastest)
+psycopg2-binary==2.9.9          # sync fallback / migrations
+
+# ── HTTP client ────────────────────────────────────────────────
+aiohttp==3.9.5
+requests==2.32.3
+
+# ── Data / Math ────────────────────────────────────────────────
+numpy>=2.2.6
+pandas>=2.3.1
+scipy>=1.16.0
+pandas-ta==0.4.71b0
+
+# ── Market data / Broker ───────────────────────────────────────
+kiteconnect==5.0.1              # Zerodha KiteConnect API
+yfinance==0.2.38                # Yahoo Finance fallback
+nsepython==2.9                  # NSE data helper (unofficial)
+
+# ── NLP / Sentiment ────────────────────────────────────────────
+vaderSentiment==3.3.2           # Financial news NLP
+newsapi-python==0.2.7           # NewsAPI client
+
+# ── Config ─────────────────────────────────────────────────────
+python-dotenv==1.0.1
+pydantic==2.7.4
+pydantic-settings==2.3.4
+
+# ── Testing ────────────────────────────────────────────────────
+pytest==8.2.2
+pytest-asyncio==0.23.7
+pytest-cov==5.0.0
+pytest-mock==3.14.0
+hypothesis==6.103.1             # property-based testing
+
+# ── Utilities ──────────────────────────────────────────────────
+python-dateutil==2.9.0
+pytz==2024.1
+ujson==5.10.0                   # fast JSON
+structlog==24.2.0               # structured logging
+
+# ── Optional: notifications ────────────────────────────────────
+python-telegram-bot==21.3       # Telegram alerts
